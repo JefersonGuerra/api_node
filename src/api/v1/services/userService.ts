@@ -1,5 +1,9 @@
 const getAllUsersService = (param) => {
-    return param;
+    return {
+        data: {
+            name: "teste",
+        }
+    };
 };
 
 module.exports = {

@@ -2,7 +2,8 @@ const express = require("express");
 const userRoute = require("./src/api/v1/routes/userRoutes.ts");;
 
 const app = express();
-const port = process.env.PORT ?? 3000;
+
+const port = process.env.PORT_NODE ?? 3000;
 
 app.use("/api/v1/user", userRoute);
 
