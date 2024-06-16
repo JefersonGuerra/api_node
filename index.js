@@ -3,7 +3,9 @@ const userRoute = require("./src/api/v1/routes/userRoutes.ts");;
 
 const app = express();
 
-const port = process.env.PORT_NODE ?? 3000;
+app.use(express.json());
+
+const port = process.env.PORT_NODE ?? 8080;
 
 app.use("/api/v1/user", userRoute);
 
